@@ -3,5 +3,13 @@
   "name": "lbk-temporaryweb",
   "compatibility_date": "2026-10-23",
   "workers_dev": true,
-  "assets": { "directory": "./public" }
+  "assets": {
+    "directory": "./public"
+  },
+  "routes": [
+    {
+      "pattern": "aling16v.icu",
+      "custom_domain": true
+    }
+  ]
 }
