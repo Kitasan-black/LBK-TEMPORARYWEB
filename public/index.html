@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#092e39"><meta name="description" content="Odd Dice · 给自己留一首歌的时间。"><title>Odd Dice · Aling</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="/">ALING<span> / SOUND ROOM</span></a><span class="edition">VOL. 01 — ODD DICE</span></header>
+<main>
+ <section class="art" aria-label="封面"><div class="art-frame"><img src="portrait.png" alt="蓝绿色调的 K. SAWAMI 人物肖像封面" width="1166" height="1349"></div><div class="art-caption"><span>01 / PERSONAL COLLECTION</span><span>♪</span></div></section>
+ <section class="player" aria-label="音乐播放器">
+  <div class="eyebrow"><span class="light"></span> A LITTLE SPACE FOR MUSIC</div>
+  <h1>Odd Dice<span>.</span></h1><p class="intro">给自己留一首歌的时间。</p>
+  <div class="track-meta"><span>单曲 / SINGLE</span><span>MP3 · 256 KBPS</span></div>
+  <audio id="audio" src="odd-dice.mp3" preload="metadata" playsinline></audio>
+  <div class="timeline"><label class="sr-only" for="seek">播放进度</label><input id="seek" type="range" min="0" max="1000" value="0" disabled><div class="times"><output id="elapsed">0:00</output><output id="duration">--:--</output></div></div>
+  <div class="transport"><button id="back" class="minor" aria-label="后退十秒">↶<small>10</small></button><button id="play" class="play" aria-label="播放音乐"><span id="play-icon">▶</span><span id="play-label">播放</span></button><button id="forward" class="minor" aria-label="前进十秒">↷<small>10</small></button><button id="loop" class="loop" aria-label="单曲循环" aria-pressed="false">↻</button></div>
+  <div class="volume-row"><button id="mute" aria-label="静音" aria-pressed="false">音量</button><label class="sr-only" for="volume">音量</label><input id="volume" type="range" min="0" max="1" step="0.01" value="0.8"><output id="volume-value">80%</output></div>
+  <p id="status" class="status" role="status">点击播放，开始聆听。</p><p id="volume-note" class="note" hidden>此浏览器的音量由设备控制，请使用手机音量键。</p>
+  <div class="bottom-note"><span>JUST PRESS PLAY.</span><span>戴上耳机，慢慢听。</span></div>
+ </section>
+</main><footer><span>ALING'S MUSIC CORNER</span><span>一首歌，一个片刻。</span></footer><script src="player.js"></script>
+</body></html>
